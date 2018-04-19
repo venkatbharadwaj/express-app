@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Firefly Integration Tests 1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+          (function() { 
+            window.fireflyAPI = window.fireflyAPI || {}; 
+            window.fireflyAPI._log = window.fireflyAPI._log || function(){}; 
+            window.fireflyChatAPI = window.fireflyChatAPI || {}; 
+            fireflyChatAPI.ready=function(x){if(typeof x=="function")x=[x];fireflyChatAPI.onLoaded=fireflyChatAPI.onLoaded||[];for(var i=0;i<x.length;i++){if(fireflyChatAPI.isLoaded){x[i]();}else{fireflyChatAPI.onLoaded.push(x[i]);}}}; 
+            fireflyChatAPI.token = "5ad8695ae807b5ca12d52773"; 
+            fireflyChatAPI.type = 'visitor'; 
+            fireflyChatAPI.serverHostUrl = "http://lbarrvosxhyd:8001"; 
+            // fireflyChatAPI.queue = 'q1'; 
+            fireflyChatAPI.assetHostUrl = "http://lbarrvosxhyd:8001"; 
+            fireflyChatAPI.publishSettingsToS3 = false; 
+            fireflyChatAPI.s3HostUrl = "https://firefly-dev.s3.amazonaws.com"; 
+            // fireflyChatAPI.skipQueueSelection = true;
+            var script = document.createElement("script"); 
+            script.type = "text/javascript"; 
+            script.src = "http://lbarrvosxhyd:8001/scripts/final/chat.js"; 
+            script.async = true; 
+            var firstScript = document.getElementsByTagName("script")[0]; 
+            firstScript.parentNode.insertBefore(script, firstScript); 
+            // fireflyChatAPI.preChatQuestions = [{key: 'username', body: 'What\'s your name?'}];
+            })();
+
+        // (function() {
+        //   window.fireflyAPI = {};
+        //   fireflyAPI.ready=function(x){if(typeof x=="function")x=[x];fireflyAPI.onLoaded=fireflyAPI.onLoaded||[];for(var i=0;i<x.length;i++){if(fireflyAPI.isLoaded){x[i]();}else{fireflyAPI.onLoaded.push(x[i]);}}};
+        //   fireflyAPI.token = "76bb745b-101b-420e-a4b6-ce61b4dcedb8";
+        //   fireflyAPI.assetHostUrl = "https://cbqa.usefirefly.com";
+        //   fireflyAPI.serverHostUrl = "https://cbqa.usefirefly.com";
+        //   var script = document.createElement("script");
+        //   script.type = "text/javascript";
+        //   script.src = "https://cbqa.usefirefly.com/scripts/final/customer.js";
+        //   script.async = true;
+        //   var firstScript = document.getElementsByTagName("script")[0];
+        //   firstScript.parentNode.insertBefore(script, firstScript);
+        // })();
+
+
+</script>
+
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+   <h1>THIS is Boxtest.html</h1> 
+    <h2>White in,
+    Green out</h2>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<iframe src="chaticon.html" id="iframe" style="display:block;height:60px"></iframe>-->
+  </body>
+</html>
